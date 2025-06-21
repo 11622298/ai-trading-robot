@@ -7,8 +7,9 @@ from flask import Flask, request
 import json
 
 # === Configuration ===
-BOT_TOKEN = '7665409371:AAEF9qgNVufWKbD9hH7QVUk4iv6UwhQv0ro'
-CHAT_ID = '6610385047'
+import os
+BOT_TOKEN = os.environ.get('7740395483:AAEDoXBAqm_Cm44K3OiAHKuY2sO5QxLGvvA')
+CHAT_ID = os.environ.get('6610385047')
 URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 # === Flask App ===
